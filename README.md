@@ -76,7 +76,7 @@ Host Behavior:
 Some hosts manage multiple listings, indicating a trend toward professional hosting.
 How to Run This Project
 Clone the repository:
-git clone https:
+git clone https:github.com/kiranjagajampi65-del/Airbnb-python-project/blob/main
 Install the required libraries:
 pip install pandas numpy matplotlib seaborn
 Run the Jupyter notebook or Python script:
@@ -96,3 +96,4 @@ Perform sentiment analysis on reviews to better understand guest experiences.
 Create an interactive dashboard using Plotly or Tableau for live monitoring.
 Conclusion
 This project offers valuable insights into the New York Airbnb market, helping both guests and hosts make informed decisions. By using EDA techniques, we identified key trends and developed actionable recommendations. Future improvements can involve advanced analytics and predictive modeling to further enhance the findings.
+
