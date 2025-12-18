@@ -76,7 +76,7 @@ Host Behavior:
 Some hosts manage multiple listings, indicating a trend toward professional hosting.
 How to Run This Project
 Clone the repository:
-git clone https://github.com/najirh/Python-Project-P2-New-York-AirBnb-Listing-2024.git
+git clone https:
 Install the required libraries:
 pip install pandas numpy matplotlib seaborn
 Run the Jupyter notebook or Python script:
