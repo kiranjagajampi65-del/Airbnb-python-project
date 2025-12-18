@@ -73,15 +73,7 @@ Availability Patterns:
 Listings with high availability tend to have lower prices and more reviews, likely due to better guest experience.
 Host Behavior:
 
-Some hosts manage multiple listings, indicating a trend toward professional hosting.
-How to Run This Project
-Clone the repository:
-git clone https:github.com/kiranjagajampi65-del/Airbnb-python-project/blob/main
-Install the required libraries:
-pip install pandas numpy matplotlib seaborn
-Run the Jupyter notebook or Python script:
-jupyter notebook day23_airbnb_eda.ipynb
-Recommendations
+
 For Guests:
 
 Look for listings with high availability and good reviews for a better experience.
