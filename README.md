@@ -1,91 +1,62 @@
-# Airbnb-python-project
-
-
-Airbnb Listings EDA Project: New York 2024
+Airbnb Listings Exploratory Data Analysis – New York (2024)
 Project Overview
-This project performs Exploratory Data Analysis (EDA) on New York Airbnb data to uncover trends and patterns in rental listings. We use libraries like Pandas, Numpy, Matplotlib, Seabornfor cleaning, visualization, and analysis.
+I analyzed 20,765 Airbnb listings across New York City to understand what drives pricing, how different room types perform, availability patterns, and host behaviors. This exploratory data analysis (EDA) uncovers practical insights that guests and hosts can use to make smarter decisions.
 
-
-
-Objective
-The goal of this project is to:
-*Analyze room types, prices, and availability across different neighborhoods.
-*Understand host behavior and listing patterns.
-*Detect potential outliers in prices.
-*Provide recommendations for guests and hosts based on insights.
+Objectives
+Analyze price variations across different neighborhoods
+Examine the distribution of room types and availability
+Study host behavior and listing patterns
+Identify and manage price outliers
+Provide actionable insights based on the analysis
+Tools & Technologies
+Category	Tools
+Language	Python
+Data Processing	Pandas, NumPy
+Visualization	Matplotlib, Seaborn
 Dataset
-*The dataset contains 20,765 entries and 22 features, including:
+The dataset consists of approximately 20,765 listings with 22 features, including:
 
-id: Unique identifier for each listing
-name: Title of the Airbnb listing
-host_name: Name of the host
-neighborhood_group: Group (borough) where the listing is located
-latitude/longitude: Geolocation of listings
-price: Nightly rental price
-room_type: Type of accommodation (e.g., entire home, private room)
-reviews_per_month: Average monthly reviews for the listing
-availability_365: Number of available days in the year
-Steps and Workflow
-1. Data Cleaning
-Handle missing data: price, neighborhood, and beds columns had null values.
-Fix data types: Converted last_review to a datetime object.
-Remove outliers: Listings with prices > $1,000 were capped to avoid skewed visualizations.
-2. EDA (Exploratory Data Analysis)
-Room type distribution:
+Price
+Room type
+Neighborhood group
+Availability (365 days)
+Reviews per month
+Number of beds
+Methodology
+Data Cleaning: Handled missing values and corrected data types
 
-*Visualized the count of each room type using bar plots.
-*Identified Entire home/apt as the most common room type.
-*Neighborhood group insights:
+Outlier Management: Addressed extreme price values to ensure robust analysis
 
-*Analyzed price variations by boroughs.
-*Manhattan had the highest average prices.
-Availability trends:
+Exploratory Analysis: Created visualizations including:
 
-Used heatmaps to show correlations among price, availability_365, number_of_reviews, and beds.
-Price distribution:
+Bar charts & histograms
 
-*Used histograms to show the distribution of prices.
-*Majority of the listings were priced between $50 - $300.
-*Host listings:
+Boxplots & heatmaps
 
-Analyzed hosts with multiple listings using boxplots to identify key contributors.
-Review behavior:
+Pair plots & correlation analysis
 
-Used pair plots to show relationships between number of reviews, price, and availability.
-3. Data Visualization
-Pairplot: To see correlations among price, availability, and number of reviews.
-Heatmap: Showing correlations among numerical features.
-Histograms and Boxplots: To detect outliers in price.
-Bar Charts: Displaying room types and neighborhood group distributions.
-Key Findings and Insights
-Price Trends:
+Key Insights
+💡 Key Insights
 
-Manhattan has the most expensive listings, followed by Brooklyn.
-Entire homes/apartments cost significantly more than private or shared rooms.
-Room Type Distribution:
+Manhattan commands the highest average prices, followed by Brooklyn
 
-Entire homes/apartments are the most common, but private rooms offer budget-friendly options.
-Outliers in Price:
+Entire homes/apartments dominate both availability and pricing
 
-Few listings priced at $10,000+ were detected, indicating the need to filter such extreme values.
-Availability Patterns:
+68% of listings fall within the $50-$300 price range
 
-Listings with high availability tend to have lower prices and more reviews, likely due to better guest experience.
-Host Behavior:
+Higher availability correlates with lower prices and increased review volume
+Recommendations
+For Guests
 
+Consider private rooms in Brooklyn for more affordable accommodation
+Prefer listings with higher availability and strong review activity
+For Hosts
 
-For Guests:
-
-Look for listings with high availability and good reviews for a better experience.
-Private rooms in Brooklyn offer affordable stays compared to Manhattan.
-For Hosts:
-
-Improve availability and review response rates to attract more bookings.
-Manage pricing effectively to compete within the borough's market.
-Future Work
-Use machine learning to predict prices based on room type and location.
-Perform sentiment analysis on reviews to better understand guest experiences.
-Create an interactive dashboard using Plotly or Tableau for live monitoring.
+Maintain competitive pricing within the local market
+Improve availability and guest engagement to increase bookings
+Future Enhancements
+Develop a machine learning model to predict listing prices
+Perform sentiment analysis on guest reviews
+Create an interactive dashboard using Plotly or Tableau
 Conclusion
-This project offers valuable insights into the New York Airbnb market, helping both guests and hosts make informed decisions. By using EDA techniques, we identified key trends and developed actionable recommendations. Future improvements can involve advanced analytics and predictive modeling to further enhance the findings.
-
+This project demonstrates the use of exploratory data analysis techniques to uncover trends and patterns in Airbnb listings. The insights derived can help both guests and hosts make informed decisions, and the project can be further enhanced with advanced analytics and predictive modeling.
